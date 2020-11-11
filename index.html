@@ -7,12 +7,12 @@
   
   <title>一片瓦</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="搬砖人、英语渣渣、瓦片">
+  <meta name="description" content="搬砖人、英语、瓦片、JAVA、Elasticsearch、Linux、English、TABATA">
 <meta property="og:type" content="website">
 <meta property="og:title" content="一片瓦">
 <meta property="og:url" content="http://example.com/index.html">
 <meta property="og:site_name" content="一片瓦">
-<meta property="og:description" content="搬砖人、英语渣渣、瓦片">
+<meta property="og:description" content="搬砖人、英语、瓦片、JAVA、Elasticsearch、Linux、English、TABATA">
 <meta property="og:locale" content="en_US">
 <meta property="article:author" content="瓦片">
 <meta property="article:tag" content="Elasticsearch | 英语不放弃 | 不燃怎样 | TABATA ">
@@ -66,6 +66,177 @@
 </header>
       <div class="outer">
         <section id="main">
+  
+    <article id="post-Linux/常用命令-查看系统版本信息" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/11/11/Linux/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4-%E6%9F%A5%E7%9C%8B%E7%B3%BB%E7%BB%9F%E7%89%88%E6%9C%AC%E4%BF%A1%E6%81%AF/" class="article-date">
+  <time datetime="2020-11-11T01:54:52.163Z" itemprop="datePublished">2020-11-11</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h1><h2 id="查看系统版本信息"><a href="#查看系统版本信息" class="headerlink" title="查看系统版本信息"></a>查看系统版本信息</h2><h3 id="一、查看Linux内核版本命令（两种方法）："><a href="#一、查看Linux内核版本命令（两种方法）：" class="headerlink" title="一、查看Linux内核版本命令（两种方法）："></a>一、查看Linux内核版本命令（两种方法）：</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat &#x2F;proc&#x2F;version</span><br></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">uname -a</span><br></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">getconf LONG_BIT</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2020/11/11/Linux/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4-%E6%9F%A5%E7%9C%8B%E7%B3%BB%E7%BB%9F%E7%89%88%E6%9C%AC%E4%BF%A1%E6%81%AF/" data-id="ckhcr9pwu00049knq3ute6no4" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-Linux/常用命令-查看磁盘空间" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/11/11/Linux/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4-%E6%9F%A5%E7%9C%8B%E7%A3%81%E7%9B%98%E7%A9%BA%E9%97%B4/" class="article-date">
+  <time datetime="2020-11-11T01:54:52.138Z" itemprop="datePublished">2020-11-11</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h1><h2 id="查看磁盘空间（df-h）"><a href="#查看磁盘空间（df-h）" class="headerlink" title="查看磁盘空间（df -h）"></a>查看磁盘空间（df -h）</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">df -h</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">df -h Df命令是linux系统以磁盘分区为单位查看文件系统，可以加上参数查看磁盘剩余空间信息。</span><br><span class="line">命令格式： df -hl </span><br><span class="line">显示格式为： </span><br><span class="line">　　文件系统 容量 已用 可用 已用% 挂载点   </span><br><span class="line">    Filesystem Size Used Avail Use% Mounted on </span><br><span class="line">    &#x2F;dev&#x2F;hda2 45G 19G 24G 44% &#x2F; &#x2F;dev&#x2F;hda1 494</span><br></pre></td></tr></table></figure>
+
+<p>相关命令</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">df -hl 查看磁盘剩余空间</span><br><span class="line">df -h 查看每个根路径的分区大小</span><br><span class="line">du -sh [目录名] 返回该目录的大小</span><br><span class="line">du -sm [文件夹] 返回该文件夹总M数</span><br><span class="line">du -h [目录名] 查看指定文件夹下的所有文件大小（包含子文件夹）</span><br></pre></td></tr></table></figure>
+
+<p>例子</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">df -hl</span><br><span class="line">显示格式为：　</span><br><span class="line">文件系统              容量 已用 可用 已用% 挂载点　</span><br><span class="line">Filesystem            Size Used Avail Use% Mounted on</span><br><span class="line">&#x2F;dev&#x2F;hda2              45G   19G   24G 44% &#x2F;</span><br><span class="line">&#x2F;dev&#x2F;hda1             494M   19M 450M   4% &#x2F;boot</span><br><span class="line">&#x2F;dev&#x2F;hda6             4.9G 2.2G 2.5G 47% &#x2F;home</span><br><span class="line">&#x2F;dev&#x2F;hda5             9.7G 2.9G 6.4G 31% &#x2F;opt</span><br><span class="line">none                 1009M     0 1009M   0% &#x2F;dev&#x2F;shm</span><br><span class="line">&#x2F;dev&#x2F;hda3             9.7G 7.2G 2.1G 78% &#x2F;usr&#x2F;local</span><br><span class="line">&#x2F;dev&#x2F;hdb2              75G   75G     0 100% &#x2F;</span><br><span class="line">&#x2F;dev&#x2F;hdb2              75G   75G     0 100% &#x2F;</span><br><span class="line">以上面的输出为例，表示的意思为：</span><br><span class="line">HD硬盘接口的第二个硬盘（b），第二个分区（2），容量是75G，用了75G，可用是0，因此利用率是100%， 被挂载到根分区目录上（&#x2F;）。</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2020/11/11/Linux/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4-%E6%9F%A5%E7%9C%8B%E7%A3%81%E7%9B%98%E7%A9%BA%E9%97%B4/" data-id="ckhcr9pwt00039knq6pps5kz5" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-Linux/常用命令-查看操作系统版本信息" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/11/11/Linux/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4-%E6%9F%A5%E7%9C%8B%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%89%88%E6%9C%AC%E4%BF%A1%E6%81%AF/" class="article-date">
+  <time datetime="2020-11-11T01:54:52.136Z" itemprop="datePublished">2020-11-11</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h1><h2 id="查看操作系统版本信息"><a href="#查看操作系统版本信息" class="headerlink" title="查看操作系统版本信息"></a>查看操作系统版本信息</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat &#x2F;etc&#x2F;redhat-release</span><br></pre></td></tr></table></figure>
+
+
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2020/11/11/Linux/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4-%E6%9F%A5%E7%9C%8B%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%89%88%E6%9C%AC%E4%BF%A1%E6%81%AF/" data-id="ckhcr9pwr00029knq1huwa2yt" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-Linux/安装zip和unzip" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/11/11/Linux/%E5%AE%89%E8%A3%85zip%E5%92%8Cunzip/" class="article-date">
+  <time datetime="2020-11-11T01:54:52.110Z" itemprop="datePublished">2020-11-11</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="安装zip和unzip"><a href="#安装zip和unzip" class="headerlink" title="安装zip和unzip"></a>安装zip和unzip</h1><h2 id="下载介质"><a href="#下载介质" class="headerlink" title="下载介质"></a>下载介质</h2><p><a target="_blank" rel="noopener" href="http://www.rpmfind.net/linux/rpm2html/search.php?query=zip(x86-64)">下载</a>对应版本的unzip和zip文件进行安装。</p>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">rpm -ivh unzip-6.0-21.el7.x86_64.rpm</span><br><span class="line">rpm -ivh zip-3.0-11.el7.x86_64.rpm</span><br></pre></td></tr></table></figure>
+
+<p>检查安装命令</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">zip</span><br><span class="line">unzip</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2020/11/11/Linux/%E5%AE%89%E8%A3%85zip%E5%92%8Cunzip/" data-id="ckhcr9pwp00019knq7bvchr1e" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-Linux/0.常用命令" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/11/11/Linux/0.%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" class="article-date">
+  <time datetime="2020-11-11T01:54:52.108Z" itemprop="datePublished">2020-11-11</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Linux常用命令"><a href="#Linux常用命令" class="headerlink" title="Linux常用命令"></a>Linux常用命令</h1><p>[toc]</p>
+<h2 id="查看磁盘空间"><a href="#查看磁盘空间" class="headerlink" title="查看磁盘空间"></a>查看磁盘空间</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">df -h</span><br></pre></td></tr></table></figure>
+
+<p><a href="%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4-%E6%9F%A5%E7%9C%8B%E7%A3%81%E7%9B%98%E7%A9%BA%E9%97%B4.md">命令说明</a></p>
+<h2 id="查看系统版本信息"><a href="#查看系统版本信息" class="headerlink" title="查看系统版本信息"></a>查看系统版本信息</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat &#x2F;proc&#x2F;version</span><br></pre></td></tr></table></figure>
+
+<p><a href="%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4-%E6%9F%A5%E7%9C%8B%E7%B3%BB%E7%BB%9F%E7%89%88%E6%9C%AC%E4%BF%A1%E6%81%AF.md">命令说明</a></p>
+<h3 id="查看操作系统版本信息"><a href="#查看操作系统版本信息" class="headerlink" title="查看操作系统版本信息"></a>查看操作系统版本信息</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat &#x2F;etc&#x2F;redhat-release</span><br></pre></td></tr></table></figure>
+
+<p><a href="%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4-%E6%9F%A5%E7%9C%8B%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%89%88%E6%9C%AC%E4%BF%A1%E6%81%AF.md">命令说明</a></p>
+<h1 id="安装工具"><a href="#安装工具" class="headerlink" title="安装工具"></a>安装工具</h1><h2 id="安装zip和unzip"><a href="#安装zip和unzip" class="headerlink" title="安装zip和unzip"></a>安装zip和unzip</h2><p><a href="%E5%AE%89%E8%A3%85zip%E5%92%8Cunzip.md">安装说明</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2020/11/11/Linux/0.%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" data-id="ckhcr9pwl00009knq98wb94mt" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
   
     <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
@@ -147,7 +318,23 @@
       <ul>
         
           <li>
-            <a href="/2020/11/05/hello-world/">Hello World</a>
+            <a href="/2020/11/11/Linux/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4-%E6%9F%A5%E7%9C%8B%E7%B3%BB%E7%BB%9F%E7%89%88%E6%9C%AC%E4%BF%A1%E6%81%AF/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2020/11/11/Linux/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4-%E6%9F%A5%E7%9C%8B%E7%A3%81%E7%9B%98%E7%A9%BA%E9%97%B4/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2020/11/11/Linux/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4-%E6%9F%A5%E7%9C%8B%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%89%88%E6%9C%AC%E4%BF%A1%E6%81%AF/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2020/11/11/Linux/%E5%AE%89%E8%A3%85zip%E5%92%8Cunzip/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2020/11/11/Linux/0.%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">(no title)</a>
           </li>
         
       </ul>
